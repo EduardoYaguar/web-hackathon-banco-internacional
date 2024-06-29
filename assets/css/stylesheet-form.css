@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", "sans-serif";
 }
 
-body{
+body {
     background-image: url("../media/svg/imagen\ fondo.svg");
     background-size: cover;
     background-position: center;
@@ -20,7 +20,7 @@ body{
     background-color: #f28b00;
 }
 
-.container{
+.container {
     position: relative;
     max-width: 800px;
     width: 100%;
@@ -30,39 +30,49 @@ body{
     box-shadow: 0 0 15px rgba(red, green, blue, alpha);
 }
 
-.container header{
+.terms-conditions a {
+    display: flex;
+    justify-content: center;
+}
+
+.container header {
     font-size: 1.5rem;
     color: #333;
     font-weight: 500;
     text-align: center;
 }
-.logo-header{
+
+.logo-header {
     width: 100%;
 }
-.container form{
+
+.container form {
     margin-top: 30px;
 }
 
-.form .input-area{
+.form .input-area {
     width: 100%;
     margin-top: 20px;
 }
 
-.select-box
-.input-area label{
+.select-box .input-area label {
     color: #333;
 }
-.student-info{
+
+.student-info {
     margin-top: 20px;
 }
-.student-info label{
+
+.student-info label {
     font-weight: 400;
 }
-.student-info a{
+
+.student-info a {
     font-weight: 300;
     font-size: 0.8rem;
 }
-.form :where(.input-area input, .select-box){
+
+.form :where(.input-area input, .select-box) {
     position: relative;
     height: 50px;
     width: 50%;
@@ -74,7 +84,7 @@ body{
     padding: 0 15px;
 }
 
-.select-box select{
+.select-box select {
     height: 100%;
     width: 100%;
     outline: none;
@@ -82,22 +92,25 @@ body{
     font-size: 1rem;
 }
 
-.form hr{
+.form hr {
     margin-top: 30px;
 }
-.hr-title{
+
+.hr-title {
     margin-bottom: 60px;
 }
-.terms-conditions{
+
+.terms-conditions {
     font-size: 0.7rem;
 }
+
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
-.form button{
+.form button {
     height: 55px;
     width: 100%;
     color: #fff;
@@ -111,12 +124,12 @@ input::-webkit-inner-spin-button {
     background-color: #e49225;
 }
 
-.form button:hover{
+.form button:hover {
     background-color: #f28b00;
 }
 
 @media screen and (max-width: 500px) {
-    .form :where(.input-area input, .select-box){
+    .form :where(.input-area input, .select-box) {
         width: 100%;
     }
 }
