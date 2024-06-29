@@ -8,16 +8,10 @@
 }
 
 
-/* Modo de secciones */
-html {
-    scroll-snap-type: y mandatory;
-}
-
 section {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     font-size: 2.5rem;
     height: 100vh;
-    background-color: #f28b00;
 }
 
 /* Barra de navegacion */
@@ -26,8 +20,6 @@ section {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    /* background-color: #f28b00; */
-    /* border-bottom: 1px solid #ddd; */
 }
 
 .navbar .logo {
@@ -36,17 +28,6 @@ section {
     width: 250px;
     height: 80px;
     color: white;
-}
-
-.navbar .links {
-    display: flex;
-    align-items: center;
-}
-
-.navbar .links a {
-    margin-right: 20px;
-    text-decoration: none;
-    font-size: 16px;
 }
 
 .navbar .apply-now {
@@ -62,53 +43,35 @@ section {
 /* seccion 1 */
 .section {
     height: 100vh;
-    background-color: ghostwhite;
     display: flex;
 }
 
-.box1 {
-    width: 50vw;
+/* Ultima pantalla */
+
+.vh100 {
     height: 100vh;
-    margin-top: 5%;
-    margin-left: 4%;
 }
 
-.box2 {
-    width: 50vw;
-    height: 100vh;
-    margin-top: 5%;
-    margin-right: 4%;
+.btn-c {
+    align-self: center;
+    align-content: center;
+    width: 30%;
+    height: 80%;
 }
 
-.ct-white {
-    color: #fff;
-}
-
-.apply-now-body {
-    padding: 10px 20px;
-    background-color: #f28b00;
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    font-size: 16px;
-}
-
-/* Contenedor de tarjetas */
-
-.container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 10px;
-    width: 90%;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.item {
-    background-color: #f28b00;
-    color: white;
-    padding: 30px;
+.custom-text {
+    font-size: 1.2rem;
+    line-height: 2;
     text-align: center;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.custom-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.image-container img {
+    border-radius: 15px;
+}
+
+/* Aqui termina lo de la ultima pantalla */

@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="../assets/css/stylesheet-form.css">
     <link rel="stylesheet" href="../assets/css/stylesheet-form-cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitud Tarjeta Icon</title>
 </head>
+
 <body>
 
 
@@ -46,27 +49,27 @@
                 </label>
             </div>
         </div>
-        <form action="#" class="form">
+        <form action="#" class="form" id="miFormulario">
             <hr>
             <header class="data-type">Tu Información</header>
             <label for="">Toda la información marcada con * es obligatoria</label>
             <div class="input-area">
-                <input type="text"   class="input-str" placeholder="Nombre Completo*" required>
+                <input type="text" class="input-str" placeholder="Nombre Completo*" required>
             </div>
             <div class="input-area">
-                <input type="number"  placeholder="Número de cédula*" required>
+                <input type="number" placeholder="Número de cédula*" required>
             </div>
             <div class="input-area">
-                <input type="email"  placeholder="Correo electrónico*" required>
+                <input type="email" placeholder="Correo electrónico*" required>
             </div>
             <div class="input-area">
-                <input type="number"  placeholder="Número de teléfono*" required>
+                <input type="number" placeholder="Número de teléfono*" required>
             </div>
             <div class="input-area">
                 <input type="text" class="input-date" placeholder="Fecha de nacimiento*" required>
             </div>
             <div class="student-info">
-                <label >No eres estudiante?</label> <a>Haz click aquí</a>
+                <label>No eres estudiante?</label> <a>Haz click aquí</a>
             </div>
             <div class="select-box">
                 <select name="" id="years">
@@ -88,7 +91,7 @@
                 </select>
             </div>
             <div class="input-area">
-                <input type="text"  class="input-str" placeholder="Ciudad de residencia*" required>
+                <input type="text" class="input-str" placeholder="Ciudad de residencia*" required>
             </div>
             <div class="input-area">
                 <input type="text" placeholder="Calle Principal*" required>
@@ -104,11 +107,17 @@
             </div>
             <hr>
             <header class="data-type">Terminos y Condiciones</header>
-            <label class="terms-conditions">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id reprehenderit, sapiente sit nam perferendis, repellat aspernatur eveniet voluptatem vero tempore exercitationem cupiditate inventore omnis voluptatibus nemo suscipit ullam alias ea.</label>
+            <label class="terms-conditions">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id reprehenderit,
+                sapiente sit nam perferendis, repellat aspernatur eveniet voluptatem vero tempore exercitationem
+                cupiditate inventore omnis voluptatibus nemo suscipit ullam alias ea.</label>
 
-            <button>Enviar</button>
+            <button id="btn-pop-up">Enviar</button>
         </form>
     </section>
 </body>
 <script src="../assets/js/form.js" defer></script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="../assets/js/sweetAlert.js"></script>
+
 </html>
