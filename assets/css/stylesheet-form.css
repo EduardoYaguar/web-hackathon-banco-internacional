@@ -8,19 +8,20 @@
 }
 
 body{
-    display: flex;
     min-height: 100vh;
+    display: flex;
     align-items: center;
     justify-content: center;
-    background: rgb(145, 12, 40);
+    padding: 20px;
+    background-color: #f28b00;
 }
 .container{
     position: relative;
-    max-width: 700px;
+    max-width: 800px;
     width: 100%;
     background: #fff;
     padding: 25px;
-    border-radius: 8px;
+    border-radius: 10px;
     box-shadow: 0 0 15px rgba(red, green, blue, alpha);
 }
 
@@ -34,49 +35,73 @@ body{
 .container form{
     margin-top: 30px;
 }
+
 .form .input-area{
     width: 100%;
+    margin-top: 20px;
+}
+
+.select-box
+.input-area label{
+    color: #333;
+}
+.student-info{
+    margin-top: 20px;
+}
+.student-info label{
+    font-weight: 400;
+}
+.student-info a{
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+.form :where(.input-area input, .select-box){
+    position: relative;
+    height: 50px;
+    width: 50%;
+    outline: none;
+    font-size: 1rem;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 0 15px;
+}
+
+.select-box select{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+}
+
+.form hr{
     margin-top: 30px;
 }
-.input-area{
-    position: relative;
-    height: 80px;
-    line-height: 80px;
+.terms-conditions{
+    font-size: 0.7rem;
 }
-.input-area input{
-    position: absolute;
+
+.form button{
+    height: 55px;
     width: 100%;
-    outline: 2px solid #616161;
-    font-size: 2.2em;
-    padding: 0 30px;
-    line-height: 80px;
-    border-radius: 10px;
-    border: 2px solid #f0ffff;
-    background: transparent;
-    transition: 0.1 ease;
-    z-index: 1111;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border: none;
+    margin-top: 30px;
+    font-weight: 400;
+    transition: all 0.2s ease;
+    border-radius: 6px;
+    background-color: #e49225;
 }
 
-.label-line{
-    position: absolute;
-    font-size: 1.6em;
-    color: #333;
-    padding: 0 25px;
-    margin: 0 20px;
-    background-color: #fff;
-    transition: 0.2s ease;
-}
-input:focus, input:valid{
-    outline: none;
-    color: #f28b00;
-    border: 4px solid #f28b00;
-}
-input:focus + .label-line, input:valid +.label-line{
-    color: #f28b00;
-    height: 30px;
-    line-height: 30px;
-    transform: translate(-15px, -16px) scale(0.88);
-    z-index: 1111;
+.form button:hover{
+    background-color: #f28b00;
 }
 
-
+@media screen and (max-width: 500px) {
+    .form :where(.input-area input, .select-box){
+        width: 100%;
+    }
+}
