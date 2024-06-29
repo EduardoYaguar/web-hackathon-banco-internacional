@@ -73,4 +73,11 @@ input:checked + label{
     background-image: url('../media/img/card4.png');
 }
 
-
+@media screen and (max-width: 768px){
+    .card-container{
+        height: 600px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: baseline;
+    }
+}
