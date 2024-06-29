@@ -10,14 +10,29 @@
 
 /* Modo de secciones */
 html {
-    scroll-snap-type: y mandatory;
+    /* scroll-snap-type: y mandatory; */
 }
 
 section {
-    scroll-snap-align: start;
+    /* scroll-snap-align: start; */
     font-size: 2.5rem;
     height: 100vh;
+    word-wrap: break-word;
+}
+
+
+div {
+    /* Control de la altura con base en el texto del div*/
+    height: auto;
+    word-wrap: break-word;
+}
+
+.primary {
     background-color: #f28b00;
+}
+
+.secondary {
+    background-color: #fff;
 }
 
 /* Barra de navegacion */
@@ -62,7 +77,6 @@ section {
 /* seccion 1 */
 .section {
     height: 100vh;
-    background-color: ghostwhite;
     display: flex;
 }
 
@@ -93,6 +107,10 @@ section {
     font-size: 16px;
 }
 
+div.center {
+    text-align: center;
+}
+
 /* Contenedor de tarjetas */
 
 .container {
@@ -112,3 +130,56 @@ section {
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.background-image {
+    background-image: url(cielo.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+}
+
+.text-color {
+    text-wrap: pretty;
+    color: #fff;
+}
+
+.h {
+    height: 90vh;
+}
+
+/* Seccion de carrusel  */
+
+
+/* fin de la seccion de carrusel */
+
+/* Ultima pantalla */
+
+.vh100 {
+    height: 100vh;
+}
+
+.btn-c {
+    align-self: center;
+    align-content: center;
+    width: 30%;
+    height: 80%;
+}
+
+.custom-text {
+    font-size: 1.2rem;
+    line-height: 2;
+    text-align: center;
+}
+
+.custom-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.image-container img {
+    border-radius: 15px;
+}
+
+/* Aqui termina lo de la ultima pantalla */
