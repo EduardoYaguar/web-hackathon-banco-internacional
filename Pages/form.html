@@ -12,8 +12,11 @@
 
 
     <section class="container">
-        <header>Tarjeta Icon - Seguro Financiero</header>
-        <hr>
+        <header>
+            <img src="../assets/media/img/logo 1.png" alt="Logo Banco Internacional" class="logo-header">
+            Tarjeta ICON - Respaldo Financiero
+        </header>
+        <hr class="hr-title">
         <header>Escoje el diseño de tu tarjeta</header>
         <div class="wrapper">
             <div class="card-container">
@@ -48,7 +51,7 @@
             <header class="data-type">Tu Información</header>
             <label for="">Toda la información marcada con * es obligatoria</label>
             <div class="input-area">
-                <input type="text"  placeholder="Nombre Completo*" required>
+                <input type="text"   class="input-str" placeholder="Nombre Completo*" required>
             </div>
             <div class="input-area">
                 <input type="number"  placeholder="Número de cédula*" required>
@@ -60,51 +63,32 @@
                 <input type="number"  placeholder="Número de teléfono*" required>
             </div>
             <div class="input-area">
-                <input type="date" placeholder="Fecha de nacimiento*" required>
+                <input type="text" class="input-date" placeholder="Fecha de nacimiento*" required>
             </div>
             <div class="student-info">
                 <label >No eres estudiante?</label> <a>Haz click aquí</a>
             </div>
             <div class="select-box">
-                <select name="" id="">
-                    <option value="">En que año estas?</option>
-                    <option value="">1er Año</option>
-                    <option value="">2do Año</option>
-                    <option value="">3er Año</option>
-                    <option value="">4to Año</option>
-                    <option value="">5to Año</option>
-                    <option value="">6to Año</option>
-                    <option value="">7mo Año</option>
+                <select name="" id="years">
+                    <option value="" disabled selected>--En que año estas?--</option>
                 </select>
             </div>
             <div class="input-area">
                 <input type="email" placeholder="Correo institucional*" required>
             </div>
             <div class="input-area">
-                <input type="date" placeholder="Fecha de graducación esperada*" required>
+                <input type="number" class="input-date" placeholder="Fecha de graducación esperada*" required>
             </div>
 
             <hr>
             <header class="data-type">Datos de Envio</header>
             <div class="select-box">
-                <select name="" id="">
-                    <option value="">Provincia</option>
-                    <option value="">Azuay</option>
-                    <option value="">Santa Elena</option>
-                    <option value="">Manabí</option>
-                    <option value="">Esmeraldas</option>
-                    <option value="">Los rios</option>
-                    <option value="">Santo Domingo de los Tsáchilas</option>
-                    <option value="">Carchi</option>
-                    <option value="">3er Año</option>
-                    <option value="">4to Año</option>
-                    <option value="">5to Año</option>
-                    <option value="">6to Año</option>
-                    <option value="">Guayas</option>
+                <select name="" id="provinces">
+                    <option value="" disabled selected>--Provincia--</option>
                 </select>
             </div>
             <div class="input-area">
-                <input type="text" placeholder="Ciudad de residencia*" required>
+                <input type="text"  class="input-str" placeholder="Ciudad de residencia*" required>
             </div>
             <div class="input-area">
                 <input type="text" placeholder="Calle Principal*" required>
