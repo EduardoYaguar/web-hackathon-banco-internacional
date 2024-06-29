@@ -15,6 +15,7 @@ body{
     padding: 20px;
     background-color: #f28b00;
 }
+
 .container{
     position: relative;
     max-width: 800px;
@@ -80,6 +81,11 @@ body{
 }
 .terms-conditions{
     font-size: 0.7rem;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
 .form button{
