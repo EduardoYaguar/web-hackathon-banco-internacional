@@ -4,15 +4,45 @@
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="../assets/css/stylesheet-form.css">
+    <link rel="stylesheet" href="../assets/css/stylesheet-form-cards.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulario</title>
+    <title>Solicitud Tarjeta Icon</title>
 </head>
 <body>
 
 
     <section class="container">
         <header>Tarjeta Icon - Seguro Financiero</header>
-
+        <hr>
+        <header>Escoje el diseño de tu tarjeta</header>
+        <div class="wrapper">
+            <div class="card-container">
+                <input type="radio" name="slide" id="c1" checked>
+                <label for="c1" class="card">
+                    <div class="row">
+                        <div class="icon">1</div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c2">
+                <label for="c2" class="card">
+                    <div class="row">
+                        <div class="icon">2</div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c3">
+                <label for="c3" class="card">
+                    <div class="row">
+                        <div class="icon">3</div>
+                    </div>
+                </label>
+                <input type="radio" name="slide" id="c4">
+                <label for="c4" class="card">
+                    <div class="row">
+                        <div class="icon">4</div>
+                    </div>
+                </label>
+            </div>
+        </div>
         <form action="#" class="form">
             <hr>
             <header class="data-type">Tu Información</header>
@@ -21,16 +51,16 @@
                 <input type="text"  placeholder="Nombre Completo*" required>
             </div>
             <div class="input-area">
-                <input type="text"  placeholder="Número de cédula*" required>
+                <input type="number"  placeholder="Número de cédula*" required>
             </div>
             <div class="input-area">
-                <input type="text"  placeholder="Correo electrónico*" required>
+                <input type="email"  placeholder="Correo electrónico*" required>
             </div>
             <div class="input-area">
-                <input type="text"  placeholder="Número de teléfono*" required>
+                <input type="number"  placeholder="Número de teléfono*" required>
             </div>
             <div class="input-area">
-                <input type="text" placeholder="Fecha de nacimiento*" required>
+                <input type="date" placeholder="Fecha de nacimiento*" required>
             </div>
             <div class="student-info">
                 <label >No eres estudiante?</label> <a>Haz click aquí</a>
@@ -48,10 +78,10 @@
                 </select>
             </div>
             <div class="input-area">
-                <input type="text" placeholder="Correo institucional*" required>
+                <input type="email" placeholder="Correo institucional*" required>
             </div>
             <div class="input-area">
-                <input type="text" placeholder="Fecha de graducación esperada*" required>
+                <input type="date" placeholder="Fecha de graducación esperada*" required>
             </div>
 
             <hr>
@@ -80,7 +110,7 @@
                 <input type="text" placeholder="Calle Principal*" required>
             </div>
             <div class="input-area">
-                <input type="text" placeholder="Numeración*" required>
+                <input type="number" placeholder="Numeración*" required>
             </div>
             <div class="input-area">
                 <input type="text" placeholder="Calle secundaria">
@@ -96,4 +126,5 @@
         </form>
     </section>
 </body>
+<script src="../assets/js/form.js" defer></script>
 </html>
